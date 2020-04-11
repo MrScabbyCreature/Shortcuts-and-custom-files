@@ -18,3 +18,6 @@ toggle bluetooth
 
 Connect PTron earbuds
 ./.custom_scripts/connect_ptron_earpods.sh
+
+#multiload indicator
+|| $(percent(cpu.inuse)) | $(size(mem.user)) | $(speed(net.down))/$(speed(net.up)) | $(speed(disk.read))/$(speed(disk.write)) ||
