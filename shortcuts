@@ -1,0 +1,20 @@
+Open chrome
+google-chrome --high-dpi-support=1 --force-device-scale-factor=0.8
+
+open visual code 
+code
+
+open chrome incognito
+google-chrome --incognito --high-dpi-support=1 --force-device-scale-factor=0.8
+
+Toggle touchpad
+./.custom_scripts/toggle_touchpad.sh
+
+Default Earpods
+./.custom_scripts/make_earpods_default.sh
+
+toggle bluetooth
+./.custom_scripts/toggle_bluetooth.sh
+
+Connect PTron earbuds
+./.custom_scripts/connect_ptron_earpods.sh
