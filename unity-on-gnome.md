@@ -6,12 +6,17 @@
       "libinput Tapping Enabled" is set to 0
 
     * Solution:  
-      open terminal and run:
-      ```
-      xinput list # find id of touchpad  
-      xinput list-props <id> # now find of of prop "libinput Tapping Enabled"  
-      xinput set-prop <id> <prop-id> 1
-      ```
+        1. Temporary  
+         open terminal and run:
+         ```
+         xinput list # find id/name of touchpad  
+         xinput list-props <id/name> # now find that of prop "libinput Tapping Enabled"  
+         xinput set-prop <id/name> <prop-id/name> 1
+         ```
+        2. Permanent  
+          Create ~/.xsessionrc and put the command in it   
+          Example: `xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1`
+          
       
 2. Scroll is inverted
 
@@ -19,12 +24,16 @@
       "Natural Scrolling Enabled" is set to 0
 
     * Solution:  
-      open terminal and run:
-      ```
-      xinput list # find id of touchpad  
-      xinput list-props <id> # now find of of prop "Natural Scrolling Enabled"  
-      xinput set-prop <id> <prop-id> 1
-      ```
+        1. Temporary  
+         open terminal and run:
+         ```
+         xinput list # find id/name of touchpad  
+         xinput list-props <id/name> # now find that of prop "Natural Scrolling Enabled"  
+         xinput set-prop <id/name> <prop-id/name> 1
+         ```
+        2. Permanent  
+          Create ~/.xsessionrc and put the command in it  
+          Example: `xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Natural Scrolling Enabled" 1`
 
 3. Workspace keys for up and down not working 
 
