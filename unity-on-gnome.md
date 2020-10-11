@@ -36,3 +36,9 @@
            ```
            sudo apt install dconf-editor
            ```
+        2. Open dconf-editor from applications and go to /org/gnome/desktop/wm/keybindings/
+        3. Set
+            * switch-to-workspace-up
+            * switch-to-workspace-down
+            * move-to-workspace-up
+            * move-to-workspace-down
